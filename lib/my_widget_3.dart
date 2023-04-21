@@ -11,9 +11,9 @@ class MyWidget3 extends ConsumerWidget {
     final s3 = ref.watch(s3NotifierProvider);
     
     final widget = s3.when(
-      data: (d) => Text('$d'),
+      data: (d) => Text(d),
       error: (e, s) => Text('error $e'),
-      loading: () => Text('準備中'),
+      loading: () => const Text('準備中'),
     );
 
     final button = ElevatedButton(

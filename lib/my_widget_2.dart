@@ -31,10 +31,5 @@ class MyWidget2 extends ConsumerWidget {
       button,
       Expanded(child: listView)
     ],);
-
-    return Scaffold(
-      floatingActionButton: button,
-      body: listView,
-    );
   }
 }

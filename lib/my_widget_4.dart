@@ -10,9 +10,9 @@ class MyWidget4 extends ConsumerWidget {
     final s4 = ref.watch(s4NotifierProvider);
 
     final widget = s4.when(
-      data: (d) => Text('$d'),
+      data: (d) => Text(d),
       error: (e, s) => Text('error $e'),
-      loading: () => Text('準備中')
+      loading: () => const Text('準備中')
     );
 
     final button = ElevatedButton(

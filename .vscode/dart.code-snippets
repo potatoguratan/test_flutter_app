@@ -106,9 +106,39 @@
     "scope": "dart",
     "body": [
       "@riverpod",
-      "int basic(BasicRef ref) {",
-      "  return xxx$1",
+      "String basic(BasicRef ref) {",
+      "  return xxx$1;",
       "}"
     ]
-  }
+  },
+  "proxy": {
+    "prefix": "proxy",
+    "scope": "dart",
+    "body": [
+      "@riverpod",
+      "String proxy(ProxyRef ref) {",
+      "  return xxx$1;",
+      "}"
+    ]
+  },
+  "logic": {
+    "prefix": "logic",
+    "scope": "dart",
+    "body": [
+      "@riverpod",
+      "String logic(LogicRef ref) {",
+      "  return xxx$1;",
+      "}"
+    ]
+  },
+  "family": {
+    "prefix": "family",
+    "scope": "dart",
+    "body": [
+      "@riverpod",
+      "String family(FamilyRef ref, $1arg) {",
+      "  return '';",
+      "}"
+    ]
+  },
 }

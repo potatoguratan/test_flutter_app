@@ -6,6 +6,6 @@ class MyWidget extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return Text('data');
+    return const Text('data');
   }
 }
