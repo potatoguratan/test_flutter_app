@@ -35,6 +35,20 @@
       "}"
     ]
   },
+  "@riverpod": {
+    "prefix": "@riverpod",
+    "scope": "dart",
+    "body": [
+      "import 'package:riverpod_annotation/riverpod_annotation.dart';",
+      "part '.g.dart';",
+      "",
+      "@riverpod",
+      "class $1Notifier extends _$$1Notifier {",
+      "  @override",
+      "  ",
+      "}",
+    ]
+  },
   "build_runner": {
     "prefix": "build_runner",
     "body": [
@@ -58,9 +72,7 @@
       "import 'package:flutter_riverpod/flutter_riverpod.dart';",
       "",
       "class $1 extends ConsumerWidget {",
-      "  const $1({",
-      "    super.key,",
-      "  });",
+      "  const $1({super.key});",
       "",
       "  @override",
       "  Widget build(BuildContext context, WidgetRef ref) {",
@@ -86,6 +98,16 @@
       "    });",
       "  }",
       "  dynamic toJson() => encoded;",
+      "}"
+    ]
+  },
+  "basic": {
+    "prefix": "basic",
+    "scope": "dart",
+    "body": [
+      "@riverpod",
+      "int basic(BasicRef ref) {",
+      "  return xxx$1",
       "}"
     ]
   }
